@@ -6,12 +6,14 @@ import TimeManager from "@/pages/TimeManager.vue";
 import TeamGraph from "@/pages/TeamGraph.vue";
 import UserGraph from "@/pages/UserGraph.vue";
 import UserManager from "@/pages/UserManager.vue";
+import Login from "@/components/Login.vue";
 
 const routes = [
+ 
+   
   {
     path: "/",
     component: DashboardLayout,
-    redirect: "/dashboard",
     children: [
       {
         path: "dashboard",
@@ -42,7 +44,13 @@ const routes = [
         path: "usermanager",
         name: "User Manager",
         component: UserManager
-      }
+      },
+       {
+        path: "dash/login",
+        name: "Login",
+        component: Login
+      },
+
     ]
   }
 ];
