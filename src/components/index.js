@@ -8,11 +8,14 @@ import NavTabsTable from "./Tables/NavTabsTable.vue";
 import OrderedTable from "./Tables/OrderedTable.vue";
 import SimpleTable from "./Tables/SimpleTable.vue";
 
+import Login from "Login.vue";
+
 export {
   ChartCard,
   NavTabsCard,
   StatsCard,
   NavTabsTable,
   OrderedTable,
-  SimpleTable
+  SimpleTable,
+  Login
 };

@@ -6,9 +6,7 @@ import App from "./App";
 import routes from "./routes/routes";
 
 // Plugins
-import GlobalComponents from "./globalComponents";
 import GlobalDirectives from "./globalDirectives";
-
 
 // MaterialDashboard plugin
 import MaterialDashboard from "./material-dashboard";
@@ -16,7 +14,7 @@ import MaterialDashboard from "./material-dashboard";
 import Chartist from "chartist";
 
 import * as am4core from "@amcharts/amcharts4/core";
-import * as am4charts from "@amcharts/amcharts4/charts";
+// import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
 am4core.useTheme(am4themes_animated);
@@ -31,9 +29,7 @@ Vue.prototype.$Chartist = Chartist;
 
 Vue.use(VueRouter);
 Vue.use(MaterialDashboard);
-Vue.use(GlobalComponents);
 Vue.use(GlobalDirectives);
-
 
 /* eslint-disable no-new */
 new Vue({
