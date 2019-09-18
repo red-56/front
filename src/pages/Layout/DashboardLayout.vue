@@ -39,17 +39,26 @@
     </div>
   </div>
 </template>
-<style lang="scss"></style>
+
 <script>
+
 import TopNavbar from "./TopNavbar.vue";
 import DashboardContent from "./Content.vue";
 import MobileMenu from "@/pages/Layout/MobileMenu.vue";
 
 export default {
+
+  name: 'DashboardLayout',
+
   components: {
     TopNavbar,
     DashboardContent,
     MobileMenu
   }
 };
+
 </script>
+
+<style lang="scss">
+
+</style>
