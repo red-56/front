@@ -106,12 +106,18 @@ export default {
           alert('MIS A JOUR');
       })
       .catch((e) => {
-        this.errors = e;
+          this.errors.push(e);
       })
     },
 
     remove() {
-      alert('YOU WILL REMOVE');
+      axios.delete('http://localhost:3000/api/users/' + this.currentUser.id)
+      .then((response) => {
+          console.log(response);
+      })
+      .catch((error) => {
+          this.errors.push(error);
+      })
     }
   }
 
