@@ -7,12 +7,26 @@ import TeamGraph from "@/pages/TeamGraph.vue";
 import UserGraph from "@/pages/UserGraph.vue";
 import UserManager from "@/pages/UserManager.vue";
 import Login from "@/components/Login.vue";
+import SignUp from "@/components/SignUp.vue";
 
 const routes = [
  
-   
   {
-    path: "/",
+    path: '/',
+    redirect: '/d/'
+  },
+  {
+   path: "/login",
+   name: "Login",
+   component: Login
+  },
+  {
+    path: "/signup",
+    name: "SignUp",
+    component: SignUp
+   },
+  {
+    path: "/d/",
     component: DashboardLayout,
     children: [
       {
@@ -44,12 +58,7 @@ const routes = [
         path: "usermanager",
         name: "User Manager",
         component: UserManager
-      },
-       {
-        path: "dash/login",
-        name: "Login",
-        component: Login
-      },
+      }
 
     ]
   }

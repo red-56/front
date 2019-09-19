@@ -21,7 +21,7 @@
               <i class="material-icons">power_settings_new</i>
             </md-list-item>
           </md-list> -->
-          <router-link to="/dash/login">
+          <router-link to="/login">
           <i class="material-icons">power_settings_new</i>
           </router-link>
         </div>

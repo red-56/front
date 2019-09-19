@@ -8,12 +8,16 @@
       <mdb-input icon="lock" type="password"  placeholder="  Password"/>
     </div>
     <div class="text-center">
+      <router-link to="/">
       <mdb-btn>Connect</mdb-btn>
+      </router-link>
       
     </div>
 
     <div class="text-center">
+      <router-link to="/signup">
       <mdb-btn>Sign Up</mdb-btn>
+      </router-link>
     </div>
    
   </form>
