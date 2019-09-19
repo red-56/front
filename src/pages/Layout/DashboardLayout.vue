@@ -39,16 +39,25 @@
     </div>
   </div>
 </template>
-<style lang="scss"></style>
+
 <script>
+
 import TopNavbar from "./TopNavbar.vue";
 import DashboardContent from "./Content.vue";
 
 
 export default {
+
+  name: 'DashboardLayout',
+
   components: {
     TopNavbar,
     DashboardContent
   }
 };
+
 </script>
+
+<style lang="scss">
+
+</style>
