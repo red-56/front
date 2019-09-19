@@ -88,6 +88,7 @@ export default {
           this.firstname = this.currentUser.first_name;
           this.email = this.currentUser.email;
           this.password = this.currentUser.password;
+          this.updated_at = this.currentUser.updatedAt;
       })
       .catch((error) => {
           this.errors.push(error);
@@ -100,6 +101,7 @@ export default {
       this.currentUser.last_name = this.lastname;
       this.currentUser.email = this.email;
       this.currentUser.password = this.password;
+      this.currentUser.updatedAt = new Date();
       axios.put('http://localhost:3000/api/users/' + this.currentUser.id, this.currentUser)
       .then((response) => {
           console.log(response);
