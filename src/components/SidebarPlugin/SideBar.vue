@@ -51,7 +51,7 @@ export default {
     },
     backgroundImage: {
       type: String,
-      default: require("@/assets/img/sidebar-4.jpg")
+      default: require("@/assets/img/back_side_2.png")
     },
     imgLogo: {
       type: String,

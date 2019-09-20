@@ -31,9 +31,7 @@ Vue.use(VueRouter);
 Vue.use(MaterialDashboard);
 Vue.use(GlobalDirectives);
 
-// eslint-disable-next-line 
-/* eslint-disable */ 
-/* eslint-disable no-new */
+
 new Vue({
   el: "#app",
   render: h => h(App),

@@ -1,9 +1,8 @@
 <template>
   <div class="wrapper" :class="{ 'nav-open': $sidebar.showSidebar }">
-    <notifications></notifications>
+   
 
     <side-bar>
-      <mobile-menu slot="content"></mobile-menu>
       <sidebar-link to="/d/dashboard">
         <md-icon>dashboard</md-icon>
         <p>Dashboard</p>
@@ -24,7 +23,7 @@
         <md-icon>bubble_chart</md-icon>
         <p>User Graph</p>
       </sidebar-link>
-      <sidebar-link to="/d/usermanager">
+      <sidebar-link v-show="seen" to="/d/usermanager">
         <md-icon>supervisor_account</md-icon>
         <p>User Manager</p>
       </sidebar-link>
@@ -35,7 +34,7 @@
 
       <dashboard-content> </dashboard-content>
 
-      <content-footer v-if="!$route.meta.hideFooter"></content-footer>
+      
     </div>
   </div>
 </template>
@@ -49,6 +48,11 @@ import DashboardContent from "./Content.vue";
 export default {
 
   name: 'DashboardLayout',
+  data() {
+    return {
+      seen: false
+    }
+  },
 
   components: {
     TopNavbar,

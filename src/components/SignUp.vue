@@ -1,5 +1,6 @@
 <template>
   <!-- Material form register -->
+  <div class="bg">
   <form>
     <p class="h4 text-center mb-4">Sign up</p>
     <div class="h4 text-center mb-4">
@@ -14,7 +15,7 @@
       </router-link>
     </div>
   </form>
-  <!-- Material form register -->
+  </div>
 </template>
 
 <script>
@@ -27,3 +28,26 @@
     }
 };
 </script>
+
+ <style scoped>
+
+.h4.text-center {
+  margin: 0;
+}
+form {
+  background: grey;
+  padding: 1rem;
+  border-radius: 20px;
+}
+.bg{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+background: url("~@/assets/img/Gotham_City.png");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+} 
+</style>
