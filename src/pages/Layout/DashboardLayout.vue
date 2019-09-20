@@ -27,6 +27,10 @@
         <md-icon>supervisor_account</md-icon>
         <p>User Manager</p>
       </sidebar-link>
+      <sidebar-link  to="/login">
+        <md-icon>power_settings_new</md-icon>
+        <p>Déconnexion</p>
+      </sidebar-link>
     </side-bar>
 
     <div class="main-panel">
@@ -50,7 +54,7 @@ export default {
   name: 'DashboardLayout',
   data() {
     return {
-      seen: false
+      seen: true
     }
   },
 
